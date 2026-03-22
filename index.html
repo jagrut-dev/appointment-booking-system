@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Self-Service Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero card">
+        <p class="eyebrow">Appointment Booking System</p>
+        <h1>Online Self-Service Appointment Booking</h1>
+        <p class="subtitle">
+          A single responsive booking experience designed for both web and mobile app users.
+          Customers can choose a service, select a staff member, and confirm an appointment in minutes.
+        </p>
+      </section>
+
+      <section class="booking card" aria-labelledby="booking-form-title">
+        <h2 id="booking-form-title">Book Your Appointment</h2>
+        <form class="booking-form">
+          <label>
+            Service
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Haircut</option>
+              <option>Dental Checkup</option>
+              <option>Physiotherapy Session</option>
+              <option>Consultation</option>
+            </select>
+          </label>
+
+          <label>
+            Staff Member
+            <select name="staff" required>
+              <option value="">Choose a professional</option>
+              <option>Alex Johnson</option>
+              <option>Priya Shah</option>
+              <option>Daniel Kim</option>
+            </select>
+          </label>
+
+          <div class="grid-2">
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Time
+              <input type="time" name="time" required />
+            </label>
+          </div>
+
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Enter your full name" required />
+          </label>
+
+          <label>
+            Contact Number
+            <input type="tel" name="phone" placeholder="e.g., +1 555 000 1234" required />
+          </label>
+
+          <button type="submit">Confirm Booking</button>
+        </form>
+      </section>
+
+      <section class="features card" aria-label="Core booking benefits">
+        <h2>Why this works on web & app</h2>
+        <ul>
+          <li>Responsive layout optimized for desktop, tablet, and mobile screens</li>
+          <li>Simple step-based inputs for quick self-service scheduling</li>
+          <li>Reusable structure suitable for browser and in-app webview</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
