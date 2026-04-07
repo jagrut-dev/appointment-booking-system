@@ -15,3 +15,6 @@ pool.query("SELECT NOW()", (err, res) => {
 app.listen(process.env.PORT, () => {
   console.log("Server running on port", process.env.PORT);
 });
+const authRoutes = require("./routes/auth");
+
+app.use("/api/auth", authRoutes);
